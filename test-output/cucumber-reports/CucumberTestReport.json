@@ -1,0 +1,262 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9147452959,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "user is able to login with valid username and password",
+        "description": "",
+        "id": "login-functionality-of-hudl-coach-home-page;user-is-able-to-login-with-valid-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1643763541,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.screenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3076380167,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the home page",
+            "match": {
+              "location": "Login_StepDefinition.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6713740375,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login in with email \"olu.oshin@outlook.com\" and password as \"Geller@59\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "olu.oshin@outlook.com",
+                  "offset": 23
+                },
+                {
+                  "val": "Geller@59",
+                  "offset": 63
+                }
+              ],
+              "location": "Login_StepDefinition.loginDetails(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9169546000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is able to login",
+            "match": {
+              "location": "Login_StepDefinition.verifyPageTitle()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@hudl_smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5356947583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTest()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Login page feature hudl with wrong username and password",
+        "description": "",
+        "id": "login-functionality-of-hudl-coach-home-page;login-page-feature-hudl-with-wrong-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 471586583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.screenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2653834167,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on the home page",
+            "match": {
+              "location": "Login_StepDefinition.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6871142166,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I login in with email \"WrongUserName@outlook.com\" and password as \"CoachHuld\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WrongUserName@outlook.com",
+                  "offset": 23
+                },
+                {
+                  "val": "CoachHuld",
+                  "offset": 67
+                }
+              ],
+              "location": "Login_StepDefinition.loginDetails(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2245535958,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user is not able to login",
+            "match": {
+              "location": "Login_StepDefinition.userIsNotAbleToLoginIn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@hudl_smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5354830833,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTest()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "user is not able to login when credentials is not provided in the username and password field",
+        "description": "",
+        "id": "login-functionality-of-hudl-coach-home-page;user-is-not-able-to-login-when-credentials-is-not-provided-in-the-username-and-password-field",
+        "after": [
+          {
+            "result": {
+              "duration": 458209958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.screenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2669795709,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I am on the home page",
+            "match": {
+              "location": "Login_StepDefinition.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2761883083,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user did not provide any username and password",
+            "match": {
+              "location": "Login_StepDefinition.emptyUserNameAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 377831666,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the login button is disable to the user",
+            "match": {
+              "location": "Login_StepDefinition.disableLoginBtn()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality of hudl coach home page",
+    "description": "",
+    "id": "login-functionality-of-hudl-coach-home-page",
+    "keyword": "Feature",
+    "uri": "HudlLogin.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@hudl_smoke"
+      }
+    ]
+  }
+]
